@@ -1,0 +1,266 @@
+[
+    {
+        "question": "Where am I?",
+        "answers": [
+            "Brewbakes",
+            "Brewbakes Cafe",
+            "Cafe Brewbakes"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727609998/pcpztb5nrglkkwl29owc.jpg",
+        "prediction": "You are at Brewbakes, a coffee shop.",
+        "LAVE": "3"
+    },
+    {
+        "question": "What can I get here?",
+        "answers": [
+            "Coffee, Snacks etc",
+            "Coffee, Snacks, Sandwiches etc.",
+            "Coffee"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727609998/pcpztb5nrglkkwl29owc.jpg",
+        "prediction": "You can get coffee here.",
+        "LAVE": "3"
+    },
+    {
+        "question": "Where am I?",
+        "answers": [
+            "Library",
+            "Library",
+            "Library"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727609999/t30gmxvtytw1bwjih4ky.jpg",
+        "prediction": "You are in a room.",
+        "LAVE": "1"
+    },
+    {
+        "question": "Where am I?",
+        "answers": [
+            "Library ground floor",
+            "ground floor of Library",
+            "Library ground floor"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727609999/juop2lzpu3mjmd4zqupu.jpg",
+        "prediction": "You are in a hallway.",
+        "LAVE": "2"
+    },
+    {
+        "question": "What is this place?",
+        "answers": [
+            "You are in front of Alumni Wall of Honor in Old Acad ",
+            "You are on ground floor of old academic building",
+            "You are near the lift lobby, ground floor, old academic building"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610000/c1unvetwxawzsisd8qsr.jpg",
+        "prediction": "This is an Alumni Wall of Honour and Alumni Footprint.",
+        "LAVE": "2"
+    },
+    {
+        "question": "Can I sit here?",
+        "answers": [
+            "Yes",
+            "Yes",
+            "Offcourse"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610000/joog7r5pp9eko8dlrcyb.jpg",
+        "prediction": "No, it is unanswerable.",
+        "LAVE": "1"
+    },
+    {
+        "question": "Can I move forward?",
+        "answers": [
+            "No, a dog is sleeping in front of you",
+            "No",
+            "No, there is a dog sleepng in front of you"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610001/np9b6fyjwcagdadmasze.jpg",
+        "prediction": "It is unanswerable.",
+        "LAVE": "1"
+    },
+    {
+        "question": "Is any mess open?",
+        "answers": [
+            "No, both the messes are closed",
+            "No",
+            "No, the mess is closed"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610001/pb4emlllcowtt6zgf19c.jpg",
+        "prediction": "unanswerable",
+        "LAVE": "1"
+    },
+    {
+        "question": "What is on the 5th floor?",
+        "answers": [
+            "CSE Department",
+            "Department of Computer Science and Engineering",
+            "There is CSE department on the 5th floor"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610002/f5f3erhv68wdlqw44ff5.jpg",
+        "prediction": "The Department of Computer Science and Engineering is on the 5th floor.",
+        "LAVE": "3"
+    },
+    {
+        "question": "What is this building?",
+        "answers": [
+            "Library Building",
+            "Library Building",
+            "This is the Library"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610002/ojnxhnhtulcke9mpwnpm.jpg",
+        "prediction": "I'm not able to identify the building in the image.",
+        "LAVE": "1"
+    },
+    {
+        "question": "Which lecture hall is this?",
+        "answers": [
+            "C01 - Old Academic Building",
+            "C01 Classroom",
+            "C01 Lecture Hall"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610003/iv0kzg8ec5f7dmcym8yq.jpg",
+        "prediction": "C01.",
+        "LAVE": "2"
+    },
+    {
+        "question": "Is the shop open?",
+        "answers": [
+            "No",
+            "Brewbakes is closed",
+            "No, the shop is closed"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610003/zfze3zlfjjrosjee1zvl.jpg",
+        "prediction": "The shop is not open, as indicated by the closed sign on the door.",
+        "LAVE": "3"
+    },
+    {
+        "question": "Is there any person in front of me?",
+        "answers": [
+            "Yes",
+            "Yes",
+            "Yes, there is a guy is front of you"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610004/hfokjwec4r5uddsuuvfg.jpg",
+        "prediction": "Yes.",
+        "LAVE": "3"
+    },
+    {
+        "question": "Where am I?",
+        "answers": [
+            "LHC Stairs",
+            "Lecture Hall Complex Stairs",
+            "You are at LHC stairs"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610004/seppqprayxnk87zmsjqr.jpg",
+        "prediction": "I'm in a parking garage.",
+        "LAVE": "1"
+    },
+    {
+        "question": "How is the weather?",
+        "answers": [
+            "Weather is clean and soothing",
+            "Clear peaceful sky",
+            "The weather is clear"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610004/chirbiabnzjnogs6vjes.jpg",
+        "prediction": "The weather appears to be sunny and partly cloudy.",
+        "LAVE": "2"
+    },
+    {
+        "question": "What is in front of me?",
+        "answers": [
+            "LHC Building",
+            "Lecture Hall Complex",
+            "LHC bulding is in front of you"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610005/lywkftvz6vbl9jim8vnr.jpg",
+        "prediction": "There is a building in front of me.",
+        "LAVE": "2"
+    },
+    {
+        "question": "Where am I?",
+        "answers": [
+            "Tennis Court",
+            "You are on the tennis court",
+            "You are in the tennis court"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610006/uhftwpzxbyoukgi0wka1.jpg",
+        "prediction": "You are on a tennis court.",
+        "LAVE": "3"
+    },
+    {
+        "question": "What is in the menu under 50?",
+        "answers": [
+            "Veg Chowmien, Veg Roll, Chowmien Roll, French Fries, Sandwich, Omellte, Paratha",
+            "French Fries, Sandwich etc.",
+            "Variety of Parathas, Rolls, and Chowmien"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610006/xzayyeixtnvu7h9fqpgs.jpg",
+        "prediction": "The menu items under 50 are:\n\n* Veg Chowmein: 45\n* Egg Chowmein: 55\n* Chic Chowmein: 70\n* Veg Fried Rice: 55\n* Fried Rice: 65\n* Chic: 80\n* Veg Roll: 40\n* Paneer Roll: 45\n* S. Egg Roll: 70\n* D. Egg Roll: 55\n* Chicken Roll: 65\n* French Fries: 90\n* Chili Tato: 40\n* Fried Chicken: 100",
+        "LAVE": "3"
+    },
+    {
+        "question": "What sport are they playing?",
+        "answers": [
+            "Cricket",
+            "Some people are playing cricket",
+            "Children are playing cricket"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610007/lw9s1k3ysipnazfaotmo.jpg",
+        "prediction": "Cricket.",
+        "LAVE": "3"
+    },
+    {
+        "question": "Is there any empty chair in the room?",
+        "answers": [
+            "Yes, just in front of you",
+            "Yes, in front of you",
+            "Yes"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610007/luhoap16hbj1s4ubw4y9.jpg",
+        "prediction": "Yes, there is one empty yellow chair in the room.",
+        "LAVE": "3"
+    },
+    {
+        "question": "Where am I?",
+        "answers": [
+            "You are in front of RnD Block Reception",
+            "RnD Block Reception",
+            "Research and development block reception"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610008/etpofqzib4ohynz3yktq.jpg",
+        "prediction": "You are in a reception area.",
+        "LAVE": "2"
+    },
+    {
+        "question": "What is in front of me?",
+        "answers": [
+            "You are in front of Old Academic Building",
+            "OldAcad Building",
+            "Old Academic Block"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610008/du6omnewi6omphapiewf.jpg",
+        "prediction": "There appears to be a building in front of you.",
+        "LAVE": "2"
+    },
+    {
+        "question": "What is in front of me?",
+        "answers": [
+            "RnD block building",
+            "a Tree",
+            "there is a tree in front of you"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610009/kkdttnu4xijqx4wf0zc7.jpg",
+        "prediction": "A building.",
+        "LAVE": "2"
+    },
+    {
+        "question": "Where am I?",
+        "answers": [
+            "Right side of RnD block Ground floor ",
+            "Near A007 RnD block",
+            "You are near the lift lobby, ground floor, RnD building"
+        ],
+        "image_url": "https://res.cloudinary.com/dodwnkmga/image/upload/v1727610009/kg4iodiulxrjgwy9ttmg.jpg",
+        "prediction": "I'm unanswerable.",
+        "LAVE": "1"
+    }
+]

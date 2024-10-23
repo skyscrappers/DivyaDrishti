@@ -1,0 +1,218 @@
+[
+    {
+        "question": "Where am I?",
+        "answers": [
+            "Brewbakes",
+            "Brewbakes Cafe",
+            "Cafe Brewbakes"
+        ],
+        "prediction": "in front of store"
+    },
+    {
+        "question": "What can I get here?",
+        "answers": [
+            "Coffee, Snacks etc",
+            "Coffee, Snacks, Sandwiches etc.",
+            "Coffee"
+        ],
+        "prediction": "coffee"
+    },
+    {
+        "question": "Where am I?",
+        "answers": [
+            "Library",
+            "Library",
+            "Library"
+        ],
+        "prediction": "in office"
+    },
+    {
+        "question": "Where am I?",
+        "answers": [
+            "Library ground floor",
+            "ground floor of Library",
+            "Library ground floor"
+        ],
+        "prediction": "in hallway"
+    },
+    {
+        "question": "What is this place?",
+        "answers": [
+            "You are in front of Alumni Wall of Honor in Old Acad ",
+            "You are on ground floor of old academic building",
+            "You are near the lift lobby, ground floor, old academic building"
+        ],
+        "prediction": "museum"
+    },
+    {
+        "question": "Can I sit here?",
+        "answers": [
+            "Yes",
+            "Yes",
+            "Offcourse"
+        ],
+        "prediction": "yes"
+    },
+    {
+        "question": "Can I move forward?",
+        "answers": [
+            "No, a dog is sleeping in front of you",
+            "No",
+            "No, there is a dog sleepng in front of you"
+        ],
+        "prediction": "no"
+    },
+    {
+        "question": "Is any mess open?",
+        "answers": [
+            "No, both the messes are closed",
+            "No",
+            "No, the mess is closed"
+        ],
+        "prediction": "no"
+    },
+    {
+        "question": "What is on the 5th floor?",
+        "answers": [
+            "CSE Department",
+            "Department of Computer Science and Engineering",
+            "There is CSE department on the 5th floor"
+        ],
+        "prediction": "phone"
+    },
+    {
+        "question": "What is this building?",
+        "answers": [
+            "Library Building",
+            "Library Building",
+            "This is the Library"
+        ],
+        "prediction": "school"
+    },
+    {
+        "question": "Which lecture hall is this?",
+        "answers": [
+            "C01 - Old Academic Building",
+            "C01 Classroom",
+            "C01 Lecture Hall"
+        ],
+        "prediction": "auditorium"
+    },
+    {
+        "question": "Is the shop open?",
+        "answers": [
+            "No",
+            "Brewbakes is closed",
+            "No, the shop is closed"
+        ],
+        "prediction": "yes"
+    },
+    {
+        "question": "Is there any person in front of me?",
+        "answers": [
+            "Yes",
+            "Yes",
+            "Yes, there is a guy is front of you"
+        ],
+        "prediction": "no"
+    },
+    {
+        "question": "Where am I?",
+        "answers": [
+            "LHC Stairs",
+            "Lecture Hall Complex Stairs",
+            "You are at LHC stairs"
+        ],
+        "prediction": "in building"
+    },
+    {
+        "question": "How is the weather?",
+        "answers": [
+            "Weather is clean and soothing",
+            "Clear peaceful sky",
+            "The weather is clear"
+        ],
+        "prediction": "cloudy"
+    },
+    {
+        "question": "What is in front of me?",
+        "answers": [
+            "LHC Building",
+            "Lecture Hall Complex",
+            "LHC bulding is in front of you"
+        ],
+        "prediction": "tree"
+    },
+    {
+        "question": "Where am I?",
+        "answers": [
+            "Tennis Court",
+            "You are on the tennis court",
+            "You are in the tennis court"
+        ],
+        "prediction": "tennis court"
+    },
+    {
+        "question": "What is in the menu under 50?",
+        "answers": [
+            "Veg Chowmien, Veg Roll, Chowmien Roll, French Fries, Sandwich, Omellte, Paratha",
+            "French Fries, Sandwich etc.",
+            "Variety of Parathas, Rolls, and Chowmien"
+        ],
+        "prediction": "unknown"
+    },
+    {
+        "question": "What sport are they playing?",
+        "answers": [
+            "Cricket",
+            "Some people are playing cricket",
+            "Children are playing cricket"
+        ],
+        "prediction": "soccer"
+    },
+    {
+        "question": "Is there any empty chair in the room?",
+        "answers": [
+            "Yes, just in front of you",
+            "Yes, in front of you",
+            "Yes"
+        ],
+        "prediction": "yes"
+    },
+    {
+        "question": "Where am I?",
+        "answers": [
+            "You are in front of RnD Block Reception",
+            "RnD Block Reception",
+            "Research and development block reception"
+        ],
+        "prediction": "in office"
+    },
+    {
+        "question": "What is in front of me?",
+        "answers": [
+            "You are in front of Old Academic Building",
+            "OldAcad Building",
+            "Old Academic Block"
+        ],
+        "prediction": "building"
+    },
+    {
+        "question": "What is in front of me?",
+        "answers": [
+            "RnD block building",
+            "a Tree",
+            "there is a tree in front of you"
+        ],
+        "prediction": "tree"
+    },
+    {
+        "question": "Where am I?",
+        "answers": [
+            "Right side of RnD block Ground floor ",
+            "Near A007 RnD block",
+            "You are near the lift lobby, ground floor, RnD building"
+        ],
+        "prediction": "hallway"
+    }
+]

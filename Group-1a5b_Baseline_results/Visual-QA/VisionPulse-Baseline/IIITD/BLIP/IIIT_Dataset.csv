@@ -1,0 +1,25 @@
+Image_id,Question,Answer_1,Answer_2,Answer_3
+1,Where am I?,Brewbakes,Brewbakes Cafe,Cafe Brewbakes
+1,What can I get here?,"Coffee, Snacks etc","Coffee, Snacks, Sandwiches etc.",Coffee
+2,Where am I?,Library,Library,Library
+10,Where am I?,Library ground floor,ground floor of Library,Library ground floor
+16,What is this place?,You are in front of Alumni Wall of Honor in Old Acad ,You are on ground floor of old academic building,"You are near the lift lobby, ground floor, old academic building"
+20,Can I sit here?,Yes,Yes,Offcourse
+33,Can I move forward?,"No, a dog is sleeping in front of you",No,"No, there is a dog sleepng in front of you"
+38,Is any mess open?,"No, both the messes are closed",No,"No, the mess is closed"
+65,What is on the 5th floor?,CSE Department,Department of Computer Science and Engineering,There is CSE department on the 5th floor
+72,What is this building?,Library Building,Library Building,This is the Library
+73,Which lecture hall is this?,C01 - Old Academic Building,C01 Classroom,C01 Lecture Hall
+76,Is the shop open?,No,Brewbakes is closed,"No, the shop is closed"
+84,Is there any person in front of me?,Yes,Yes,"Yes, there is a guy is front of you"
+85,Where am I?,LHC Stairs,Lecture Hall Complex Stairs,You are at LHC stairs
+89,How is the weather?,Weather is clean and soothing,Clear peaceful sky,The weather is clear
+90,What is in front of me?,LHC Building,Lecture Hall Complex,LHC bulding is in front of you
+91,Where am I?,Tennis Court,You are on the tennis court,You are in the tennis court
+96,What is in the menu under 50?,"Veg Chowmien, Veg Roll, Chowmien Roll, French Fries, Sandwich, Omellte, Paratha","French Fries, Sandwich etc.","Variety of Parathas, Rolls, and Chowmien"
+110,What sport are they playing?,Cricket,Some people are playing cricket,Children are playing cricket
+115,Is there any empty chair in the room?,"Yes, just in front of you","Yes, in front of you",Yes
+118,Where am I?,You are in front of RnD Block Reception,RnD Block Reception,Research and development block reception
+125,What is in front of me?,You are in front of Old Academic Building,OldAcad Building,Old Academic Block
+127,What is in front of me?,RnD block building,a Tree,there is a tree in front of you
+139,Where am I?,Right side of RnD block Ground floor ,Near A007 RnD block,"You are near the lift lobby, ground floor, RnD building"
