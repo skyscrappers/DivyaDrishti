@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Bars Animation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body onclick="toggleBars()">
+    <div class="bars-container" id="bars-container">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div id="label-container"></div>
+    <audio id="audio" src="{{ url_for('static', filename='beep-warning-6387.mp3') }}"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script>
+        let barsVisible = true;
+        let animationInterval;
+        let model, webcam, labelContainer, maxPredictions;
+
+        async function init() {
+            const modelURL = "../static/our_model/model.json"; // Update with your model URL
+            const metadataURL = "../static/our_model/metadata.json"; // Update with your metadata URL
+
+            // Load the model and metadata
+            model = await tmImage.load(modelURL, metadataURL);
+            maxPredictions = model.getTotalClasses();
+
+            // Setup the webcam
+            const flip = true; // whether to flip the webcam
+            webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
+            await webcam.setup(); // request access to the webcam
+            await webcam.play();
+            window.requestAnimationFrame(loop);
+
+            // Append elements to the DOM
+            labelContainer = document.getElementById("label-container");
+            for (let i = 0; i < maxPredictions; i++) { // and class labels
+                labelContainer.appendChild(document.createElement("div"));
+            }
+        }
+
+        async function loop() {
+            webcam.update(); // update the webcam frame
+            await predict();
+            window.requestAnimationFrame(loop);
+        }
+
+        async function predict() {
+            // Predict can take in an image, video or canvas html element
+            const prediction = await model.predict(webcam.canvas);
+            for (let i = 0; i < maxPredictions; i++) {
+
+                // Log "hello" if the probability of class 2 is higher than 0.7
+                if (prediction[i].className === "Class 2" && prediction[i].probability > 0.7) {
+                    // console.log("hello");
+                    document.getElementById('audio').play();
+                }
+            }
+        }
+
+        function toggleBars() {
+            const barsContainer = document.getElementById('bars-container');
+            barsVisible = !barsVisible;
+            if (barsVisible) {
+                startAnimation();
+            } else {
+                stopAnimation();
+            }
+        }
+
+        function startAnimation() {
+            const bars = document.querySelectorAll('.bar');
+            animationInterval = setInterval(() => {
+                bars.forEach(bar => {
+                    const height = 10 + Math.random() * 60; // Random height between 10px and 50px
+                    bar.style.height = `${height}px`;
+                });
+            }, 200); // Change every 300ms
+        }
+
+        function stopAnimation() {
+            clearInterval(animationInterval);
+            const bars = document.querySelectorAll('.bar');
+            bars.forEach(bar => {
+                bar.style.height = '10px'; // Reset height when animation stops
+            });
+        }
+
+        // Automatically request permissions and initialize the model
+        requestPermissions();
+
+        async function requestPermissions() {
+            try {
+                await navigator.mediaDevices.getUserMedia({ video: true });
+                init();
+            } catch (err) {
+                alert("Webcam access is required to use this application.");
+            }
+        }
+    </script>
+</body>
+</html>

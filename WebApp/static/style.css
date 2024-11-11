@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #f5f5f5; /* Light background */
+    align-items: center;
+    justify-content: center; /* Center the content */
+    flex-direction: column; /* Stack button and bars vertically */
+    cursor: pointer; /* Make the whole screen a clickable area */
+}
+
+.bars-container {
+    display: flex; /* Initially show the bars */
+    flex-direction: row; /* Align bars in a row */
+    align-items: center; /* Center align bars vertically */
+    margin-top: 20px; /* Space between button and bars */
+}
+
+.mic-button {
+    background-color: #4285F4; /* Google Blue */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.mic-button:hover {
+    background-color: #357ae8; /* Darker blue on hover */
+}
+
+.bar {
+    width: 10px; /* Width of each bar */
+    height: 10px; /* Default small height */
+    margin: 0 4px; /* Space between bars */
+    background-color: #4285F4; /* Default color */
+    border-radius: 10px; /* Fully rounded corners */
+    transition: height 0.3s ease; /* Use transitions */
+}
+
+.bar:nth-child(1) {
+    background-color: #4285F4; /* Google Blue */
+}
+
+.bar:nth-child(2) {
+    background-color: #EA4335; /* Google Red */
+}
+
+.bar:nth-child(3) {
+    background-color: #FBBC05; /* Google Yellow */
+}
+
+.bar:nth-child(4) {
+    background-color: #34A853; /* Google Green */
+}
+
+.bar:nth-child(5) {
+    background-color: #4285F4; /* Google Blue */
+}
+
+.bar:nth-child(6) {
+    background-color: #EA4335; /* Google Red */
+}
