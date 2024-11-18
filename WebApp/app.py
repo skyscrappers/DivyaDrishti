@@ -1,7 +1,9 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_file
 import os
 import requests
 from pydub import AudioSegment
+from gtts import gTTS
+import io
 
 app = Flask(__name__)
 
@@ -16,6 +18,12 @@ def index():
 
 @app.route('/save_data', methods=['POST'])
 def save_data():
+
+    print('Request received')
+    print('Request headers:', request.headers)
+    print('Request form:', request.form)
+    print('Request files:', request.files)
+
     try:
         if 'image' not in request.files or 'audio' not in request.files:
             print('Missing image or audio file in request')
@@ -51,8 +59,23 @@ def make_api_call(image_path, audio_path):
             'image': image_file,
             'audio': audio_file
         }
-        response = requests.post('https://10.212.133.13:8000/run_conversation', files=files, verify=False)
-        return response.json()
+        print('Making API call')
+        response = requests.post('http://192.168.49.217:8000/run_conversation', files=files)
+        response.raise_for_status()  # Raise an exception for HTTP errors
+        result = response.json()
+        
+        # Convert the text response to audio using gTTS
+        tts = gTTS(result['answer'])
+        tts_audio_path = os.path.join(UPLOAD_FOLDER_AUDIO, 'response.mp3')
+        tts.save(tts_audio_path)
+        
+        # Read the audio file as binary
+        with open(tts_audio_path, 'rb') as audio_file:
+            audio_binary = audio_file.read()
+        
+        # Add the audio binary to the response
+        result['audio_binary'] = audio_binary.hex()
+        return result
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -15,7 +15,7 @@ async function init() {
 
     // Setup the webcam
     const flip = true; // whether to flip the webcam
-    webcam = new tmImage.Webcam(720, 720, flip); // width, height, flip
+    webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
     await webcam.setup(); // request access to the webcam
     await webcam.play();
     window.requestAnimationFrame(loop);
@@ -39,7 +39,7 @@ async function predict() {
     for (let i = 0; i < maxPredictions; i++) {
 
         // Log "hello" if the probability of class 2 is higher than 0.7
-        if (prediction[i].className === "Class 2" && prediction[i].probability > 0.7) {
+        if (prediction[i].className === "Class 2" && prediction[i].probability > 0.9) {
             // console.log("hello");
             document.getElementById('audio').play();
         }
@@ -156,7 +156,10 @@ function sendDataToBackend(photoBlob, audioBlob) {
 
     fetch('/save_data', {
         method: 'POST',
-        body: formData
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
     }).then(response => {
         if (!response.ok) {
             return response.text().then(text => { throw new Error(text) });
@@ -166,6 +169,13 @@ function sendDataToBackend(photoBlob, audioBlob) {
         console.log('VQA response:', data);
         const utterance = new SpeechSynthesisUtterance(data.answer);
         synth.speak(utterance);
+        // Convert the audio binary back to a Blob and play it
+        const audioBinary = data.audio_binary;
+        const audioBuffer = new Uint8Array(audioBinary.match(/.{1,2}/g).map(byte => parseInt(byte, 16)));
+        const audioBlob = new Blob([audioBuffer], { type: 'audio/mp3' });
+        const audioUrl = URL.createObjectURL(audioBlob);
+        const audio = new Audio(audioUrl);
+        audio.play();
     }).catch(error => {
         console.error('Error sending data to backend:', error);
     });
