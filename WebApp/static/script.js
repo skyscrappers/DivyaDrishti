@@ -117,7 +117,7 @@ async function startRecording() {
 
     setTimeout(() => {
         stopRecording();
-    }, 5000); // Stop recording after 5 seconds
+    }, 20000); // Stop recording after 5 seconds
 }
 
 function stopRecording() {
