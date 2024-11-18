@@ -39,7 +39,7 @@ async function predict() {
     for (let i = 0; i < maxPredictions; i++) {
 
         // Log "hello" if the probability of class 2 is higher than 0.7
-        if (prediction[i].className === "Class 2" && prediction[i].probability > 0.9) {
+        if (prediction[i].className === "Class 2" && prediction[i].probability > 1) {
             // console.log("hello");
             document.getElementById('audio').play();
         }
@@ -170,12 +170,12 @@ function sendDataToBackend(photoBlob, audioBlob) {
         const utterance = new SpeechSynthesisUtterance(data.answer);
         synth.speak(utterance);
         // Convert the audio binary back to a Blob and play it
-        const audioBinary = data.audio_binary;
-        const audioBuffer = new Uint8Array(audioBinary.match(/.{1,2}/g).map(byte => parseInt(byte, 16)));
-        const audioBlob = new Blob([audioBuffer], { type: 'audio/mp3' });
-        const audioUrl = URL.createObjectURL(audioBlob);
-        const audio = new Audio(audioUrl);
-        audio.play();
+        // const audioBinary = data.audio_binary;
+        // const audioBuffer = new Uint8Array(audioBinary.match(/.{1,2}/g).map(byte => parseInt(byte, 16)));
+        // const audioBlob = new Blob([audioBuffer], { type: 'audio/mp3' });
+        // const audioUrl = URL.createObjectURL(audioBlob);
+        // const audio = new Audio(audioUrl);
+        // audio.play();
     }).catch(error => {
         console.error('Error sending data to backend:', error);
     });
