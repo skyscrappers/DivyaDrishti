@@ -1,6 +1,8 @@
 # DivyaDrishti
 > _AI-Enhanced Learning and Interaction Assistant for Visually Impaired people at IIIT Delhi._
 
+https://github.com/user-attachments/assets/e977519b-d863-4808-b3e1-768557474aa4
+
 Our revolutionary idea in the educational domain to cater to the
 needs of visually impaired students at IIIT Delhi by leveraging multiple facets of
 Computer Vision and Natural Language Processing techniques to build a Large
@@ -32,5 +34,15 @@ which will help bridge the gaps in education for differently-abled students and
 create a healthy, inclusive environment where every student can thrive & unlock
 their full potential to scale great heights & achieve all their dreams.
 
+---
+
 ## Getting Started
 - Download the model archive from [this link](https://drive.google.com/file/d/18A6sKKInUxBG_dXJRJKk-rCYTLHZcED0/view?usp=sharing), extract the zip and place it inside this [directory](./Group-1a5b_Baseline_results).
+
+## Contributors
+1. [Akash Kushwaha](https://github.com/skyscrappers)
+2. [Lakshay Kumar](https://github.com/LunarLynxLima)
+3. [Manav Mittal](https://github.com/manavmittal05)
+4. [Shreyas Kabra](https://github.com/shreyas21563)
+5. [Tanmay Singh](https://github.com/imtanmay46)
+6. [Utkarsh Venaik](https://github.com/pypixel9)
